@@ -1,0 +1,62 @@
+/* dark-calendar.css */
+
+/* Background warna latar belakang */
+.react-calendar {
+   background-color: #171717; /* Warna latar belakang tema gelap */
+   color: #fff; /* Warna teks tema gelap */
+   border: none;
+ }
+ 
+ /* Gaya bulan dan tahun */
+ .react-calendar__navigation button {
+   color: #fff; /* Warna teks tombol navigasi */
+ }
+
+ .react-calendar__navigation__arrow:hover{
+  color: black;
+ }
+ .react-calendar__navigation__arrow:active{
+  color: black;
+ }
+
+ .react-calendar__navigation__label:hover span{
+  color: black;
+ }
+ 
+ /* Gaya hari-hari dalam minggu */
+ .react-calendar__month-view__weekdays__weekday abbr {
+   color: #999;  /* Warna teks hari dalam minggu */
+   border:none;
+ }
+ 
+ /* Gaya hari aktif (tanggal yang dipilih) */
+ .react-calendar__tile--active {
+   background-color: #555; /* Warna latar belakang tanggal yang dipilih */
+   color: #fff; /* Warna teks tanggal yang dipilih */
+ }
+ 
+ /* Gaya hari hari biasa */
+ .react-calendar__tile--now {
+   background-color: rgb(39 39 42); /* Warna latar belakang hari saat ini */
+ }
+
+ .react-calendar__tile:hover{
+  color: black;
+ }
+
+ /* Gaya hari hari di luar bulan aktif */
+ .react-calendar__tile--out-of-month {
+   color: #999; /* Warna teks hari di luar bulan aktif */
+ }
+ 
+ /* Gaya hari hari akhir pekan */
+ .react-calendar__tile--weekend {
+   background-color: #123; /* Warna latar belakang hari akhir pekan */
+ }
+ 
+ /* Gaya bulan dan tahun aktif */
+ .react-calendar__tile--view--active {
+   background-color: #555; /* Warna latar belakang bulan dan tahun aktif */
+   color: #fff; /* Warna teks bulan dan tahun aktif */
+ }
+ 

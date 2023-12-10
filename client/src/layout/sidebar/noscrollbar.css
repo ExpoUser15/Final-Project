@@ -1,0 +1,12 @@
+.no-scrolling::-webkit-scrollbar {
+    width: 0; /* Lebar scrollbar */
+}
+
+.no-scrolling::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Warna thumb scrollbar */
+}
+
+.no-scrolling::-webkit-scrollbar-track {
+    background-color: transparent; /* Warna track scrollbar */
+    color: #374151
+}

@@ -1,0 +1,13 @@
+.react-calendar {
+    background-color: #fff;
+    border: none;
+}
+
+.react-calendar__tile--active {
+    color: #000; /* Warna teks tanggal yang dipilih */
+}
+
+.react-calendar__tile--now {
+    background-color:  #b6bdf3;
+    color: #000; /* Warna latar belakang hari saat ini */
+  }
