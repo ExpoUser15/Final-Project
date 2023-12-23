@@ -3,11 +3,11 @@ import axios from "axios";
 
 function Wheather() {
     const [data, setData] = useState({
-        name: "",
-        main: "",
-        temp: "",
-        icon: "",
-        humidity: "",
+        name: "Sorong",
+        main: "1313",
+        temp: "1221",
+        icon: "1333",
+        humidity: "1331313",
     });
     const [date, setDate] = useState("");
 
@@ -21,19 +21,19 @@ function Wheather() {
     }
 
     useEffect(() => {
-        axios.get("https://api.openweathermap.org/data/2.5/weather?q=sorong&appid=d1a3760d68794ecd3652e888ff519bb1&units=metric")
-        .then(res => {
-            // if(res.data.weather[0].main = "Cloudy")
-            setData({
-                name: res.data.name, 
-                main: res.data.weather[0].main, 
-                temp: Math.floor(res.data.main.temp), 
-                icon: `https://openweathermap.org/img/wn/${res.data.weather[0].icon}.png`, 
-                humidity: res.data.main.humidity,
-                feelsLike: Math.floor(res.data.main.feels_like),
-                wind: res.data.wind.speed
-            });
-        });
+        // axios.get("https://api.openweathermap.org/data/2.5/weather?q=sorong&appid=d1a3760d68794ecd3652e888ff519bb1&units=metric")
+        // .then(res => {
+        //     // if(res.data.weather[0].main = "Cloudy")
+        //     setData({
+        //         name: res.data.name, 
+        //         main: res.data.weather[0].main, 
+        //         temp: Math.floor(res.data.main.temp), 
+        //         icon: `https://openweathermap.org/img/wn/${res.data.weather[0].icon}.png`, 
+        //         humidity: res.data.main.humidity,
+        //         feelsLike: Math.floor(res.data.main.feels_like),
+        //         wind: res.data.wind.speed
+        //     });
+        // });
         dateFunction();
     }, []);
 
